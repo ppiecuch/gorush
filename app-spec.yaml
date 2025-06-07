@@ -1,0 +1,14 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+functions:
+- github:
+    branch: master
+    deploy_on_push: true
+    repo: ppiecuch/gorush
+  name: gorush
+  routes:
+  - path: /
+  source_dir: /
+name: gorush-komsoft
+region: nyc

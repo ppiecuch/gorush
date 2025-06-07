@@ -1,0 +1,12 @@
+parameters: {}
+environment: {}
+packages:
+  - name: gorush-komsoft
+    environment: {}
+    parameters: {}
+    actions:
+      - name: gorush
+        main: ''
+        runtime: 'go:default'
+        environment: {}
+        parameters: {}
